@@ -34,7 +34,7 @@ public class MainActivity extends AppCompatActivity {
                 float moyenne=(note_cs+note_java+note_py)/3;
                 if (moyenne >= 10) {
                     Intent i = new Intent(getApplicationContext(),Succeeded.class );
-                    i.putExtra("Mayenne",moyenne);
+                    i.putExtra("moyenne",moyenne);
                     startActivity(i);
 
                 }
