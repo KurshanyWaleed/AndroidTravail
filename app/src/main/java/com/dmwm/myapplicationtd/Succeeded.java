@@ -12,7 +12,7 @@ import android.widget.TextView;
 public class Succeeded extends AppCompatActivity {
     Button sms;
     TextView txt;
-    String str="Felisitation vous avez la moyenne";
+    String str="Felisitation vous avez la moyenne Vore moyenne est : ";
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
