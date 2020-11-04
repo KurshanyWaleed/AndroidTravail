@@ -19,6 +19,7 @@ public class Succeeded extends AppCompatActivity {
         setContentView(R.layout.activity_succeeded);
         sms=findViewById(R.id.buttonSMS);
         Intent i = getIntent();
+        txt= findViewById(R.id.textViewResult);
         final float moy=i.getFloatExtra("moyenne",0);
         txt.setText(str+" "+moy);
 
@@ -27,6 +28,7 @@ public class Succeeded extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent i = new Intent(Intent.ACTION_VIEW, Uri.parse(str+""+moy));
+                i.setType("vnd.android-dir/mms-sms");
                 startActivity(i);
             }
         });

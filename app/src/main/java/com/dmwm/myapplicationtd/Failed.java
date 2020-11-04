@@ -6,6 +6,7 @@ import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;
 import android.view.View;
+import android.webkit.WebView;
 import android.widget.Button;
 import android.widget.TextView;
 
@@ -18,6 +19,7 @@ public class Failed extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_failed);
         sms=findViewById(R.id.buttonSMS);
+        txt= findViewById(R.id.textViewResult);
         Intent i = getIntent();
         final float moy=i.getFloatExtra("moyenne",0);
         txt.setText(str+" "+moy);
